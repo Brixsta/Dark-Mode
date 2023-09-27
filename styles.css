@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 21%;
+  width: 18%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  position: relative;
+}
+
+.image-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/map.png");
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 1rem;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p {
+  margin-bottom: 0.15rem;
+  z-index: 100;
+}
+
+.chip {
+  margin: 0.4rem 0rem;
+  z-index: 100;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: rgb(35, 35, 35);
+  z-index: 100;
+}
+
+.number {
+  font-weight: bold;
+  color: rgb(35, 35, 35);
+  z-index: 1000;
+}
+
+.valid {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgb(161, 161, 161);
+  opacity: 0.7;
+  z-index: 100;
+}
+
+.date {
+  color: rgb(35, 35, 35);
+  z-index: 100;
+}
+
+.name {
+  color: rgb(35, 35, 35);
+  z-index: 100;
+}
+
+.red-circle,
+.orange-circle {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.red-circle {
+  right: 2.9rem;
+  bottom: 1rem;
+  background-color: red;
+}
+
+.orange-circle {
+  right: 1rem;
+  bottom: 1rem;
+  background-color: orange;
+}
+
+.icon-group {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(95, 95, 95);
+  background-color: rgb(239, 239, 239);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
