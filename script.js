@@ -1,12 +1,12 @@
 const icon = document.querySelector("i");
 const iconGroup = document.querySelector(".icon-group");
 const container = document.querySelector(".container");
-const imageContainer = document.querySelector(".image-container");
 const name = document.querySelector(".name");
 const date = document.querySelector(".date");
 const valid = document.querySelector(".valid");
 const number = document.querySelector(".number");
 const title = document.querySelector(".title");
+const map = document.querySelector(".map");
 iconGroup.addEventListener("click", toggle);
 
 // TOGGLE BUTTON IN TOP RIGHT

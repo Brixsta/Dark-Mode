@@ -27,11 +27,6 @@ body {
 .image-container {
   height: 100%;
   width: 100%;
-  background-image: url("images/map.png");
-  background-size: 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position-y: 1rem;
   opacity: 0.4;
   position: absolute;
   top: 0;
@@ -43,21 +38,34 @@ p {
   z-index: 100;
 }
 
+.map {
+  position: absolute;
+  width: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  z-index: 10;
+  opacity: 0.5;
+}
+
 .chip {
   margin: 0.4rem 0rem;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .title {
   font-size: 1.2rem;
   color: rgb(35, 35, 35);
-  z-index: 100;
+  z-index: 1000;
+  display: block;
+  position: relative;
 }
 
 .number {
   font-weight: bold;
   color: rgb(35, 35, 35);
   z-index: 1000;
+  position: relative;
 }
 
 .valid {
@@ -65,17 +73,20 @@ p {
   font-size: 0.8rem;
   color: rgb(161, 161, 161);
   opacity: 0.7;
-  z-index: 100;
+  z-index: 1000;
+  position: relative;
 }
 
 .date {
   color: rgb(35, 35, 35);
-  z-index: 100;
+  z-index: 1000;
+  position: relative;
 }
 
 .name {
   color: rgb(35, 35, 35);
-  z-index: 100;
+  z-index: 1000;
+  position: relative;
 }
 
 .red-circle,
@@ -98,6 +109,7 @@ p {
   right: 1rem;
   bottom: 1rem;
   background-color: orange;
+  opacity: 0.7;
 }
 
 .icon-group {
